@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col s3">
+                <img class="responsive-img" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Magic_eight_ball.png" alt="">
+            </div>
+            <div class="col s9">
+                <h1>Choice Randomizer</h1>
+                <p>Write your choices in the input field then click Choose for me and i'll select a random option. </p>
+                <p>login to save <input id="file" type="file"></p>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s6 offset-s3">
+                <form id="js-add">
+                    <div class="input-field col s9 ">
+                        <input  id="option" type="text" class="validate">
+                        <label for="option">Option</label>
+                      </div>
+                      <div class="col s3">
+                          <input type="submit" class="btn" value="add">
+                      </div>
+                </form>
+                <div id="js-cards" class="row">
+                 
+                </div>
+                <a id="js-choose" class="btn hide" href="#">choose for me</a>
+                <a href="#" id="js-save" class="btn hide">save</a>
+            </div>
+        </div>   
+    </div>
+    
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/arweave/bundles/web.bundle.min.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
